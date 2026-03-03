@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cadfff;
+    padding: 20px;
+}
+
+.container {
+    background: rgb(132, 244, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 650px;
+}
+
+.container h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 15px);
+    min-width: 250px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%;
+}
+
+.preview-img {
+    max-width: 200px;
+    margin-top: 10px;
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.mensaje {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button-container {
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+button {
+    background: linear-gradient(130deg, rgb(115, 113, 248), rgb(66, 251, 245));
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(130deg, rgb(253, 188, 188), rgb(16, 3, 5));
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Parqueadero</title>
+    <link rel="stylesheet" href="css/stylos.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro Usuario - Parqueadero</h2>
+
+    <form class="form-container" id="registroForm">
+
+        <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required minlength="3" maxlength="40">
+        </div>
+
+        <div class="form-group">
+            <label for="documento">Documento:</label>
+            <input type="number" id="documento" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rol">Rol:</label>
+            <select id="rol" required>
+                <option value="">Seleccione rol</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Docente">Docente</option>
+                <option value="Administrativo">Administrativo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tipoVehiculo">Tipo de Vehículo:</label>
+            <select id="tipoVehiculo" required>
+                <option value="">Seleccione</option>
+                <option value="Carro">Carro</option>
+                <option value="Moto">Moto</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" required maxlength="6">
+        </div>
+
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" required>
+        </div>
+
+        <div class="form-group full-width">
+            <label for="foto">Foto del Vehículo:</label>
+            <input type="file" id="foto" accept="image/*" required>
+            <img class="preview-img" id="previewImg" alt="Vista previa">
+        </div>
+
+        <div id="mensaje" class="mensaje"></div>
+
+        <div id="infoParqueo" class="mensaje"></div>
+
+        <div class="button-container">
+             <button type="button" id="btnSalir" style="display:none;">Salir del Parqueadero</button>
+        
+       </div>
+
+        <div class="button-container">
+            <button type="submit">Registrar Usuario</button>
+        </div>
+
+    </form>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
